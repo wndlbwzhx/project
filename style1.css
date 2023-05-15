@@ -1,0 +1,69 @@
+.container {
+display: flex; /* определяем контейнер как flex-контейнер */
+justify-content: space-between; /* распределяем элементы по
+горизонтали */
+flex-wrap: wrap; /* разрешаем перенос элементов, если они не
+помещаются в одну строку */
+width: 100%; /* ширина контейнера = ширина браузера */
+margin: 20px auto; /* внешний отступ сверху и снизу по 20px, слева и
+справа - auto, тем самым центрируя контейнер */
+}
+.card {
+width: 25%; /* ширина карточки = 25% от контейнера */
+max-width: 300px; /* максимальная ширина 300px */
+border: 3px solid #8C2D5A; /* черная рамка толщиной в 1px */
+padding: px; /* внутренний отступ с каждой стороны по 20px */
+}
+.card__image {
+height: 120px; /* ширина 120px */
+width: 100%; /* ширина блока под изображение 100% */
+max-width: 180px; /* максимальная ширина блока под изображение 180px
+*/
+background-color: #ffdef4; /* серая заливка блока под изображение */
+margin: auto; /* автоматические отступы, центрируем блок под
+изображение */ }
+.card__description {
+margin-top: 15px; /* внешний отступ в 15px */
+text-align: center; /* выравниваем текст по центру */
+}
+/* Медиазпросы */
+/* При ширине браузера 768px и меньше */
+@media screen and (max-width: 768px) {
+.card {
+ width: 50%; /* ширина карточки 50% от ширины
+контейнера */
+ max-width: 100%; /* максимальная ширина карточки 100%
+от ширины контейнера */
+ margin: auto auto 10px; /* автоматический внешний
+отступ со всех сторон, но снизу 10px */
+}
+}
+/* При ширине браузера 480px и меньше */
+@media screen and (max-width: 480px) {
+.card {
+ width: 95%; /* ширина карточки 95% от ширины
+контейнера */
+}
+}
+body {
+     max-width: 1062px;
+    width: 100%;
+    margin: auto;
+    background: url(img/image%201.png) no-repeat center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    background-color: color: #fff;
+}
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+.menu-item a {
+    text-decoration: none;
+    color: #ffdef4;
+    font-size: 34px;
+    display: flex;
+    list-style-type: none;
+}
